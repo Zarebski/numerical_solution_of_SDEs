@@ -5,7 +5,7 @@ def bm():
     """Brownian path simulation"""
     np.random.seed(100)    # set the seed of the random number generator
     stopping_time = 1.
-    N = 10
+    N = 10**3
     dt = stopping_time/N 
 
     dW = np.sqrt(dt)*np.random.normal(size=N)
